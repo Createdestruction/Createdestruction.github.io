@@ -20,7 +20,7 @@ window.onload = function(){
     var drops = [];
     //给每一个文字初始化一个起始点的位置
     for(var i=0;i<colunms;i++){
-        drops.push(0);
+        drops.push(H);/*这个是设置文字的初始位置元代码是：drops.push(0);*/
     }
     //运动的文字
     var str ="WELCOME TO WWW.ITRHX.COM";
@@ -53,5 +53,5 @@ window.onload = function(){
         return "rgb("+r+","+g+","+b+")";
     }
     draw();
-    setInterval(draw,35);
+    setInterval(draw,30);
 };
