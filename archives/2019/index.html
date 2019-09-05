@@ -335,112 +335,8 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
       
         
   <h2 class="title">
-    <a href="/2019/09/05/Shiro/">
-      Shiro
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    <a href="https://Createdestruction.github.io" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>Createdestruction</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-05</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/Shiro/Shiro相关概念/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Shiro&nbsp;/&nbsp;Shiro相关概念</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <h4 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h4><p>MQ全称为Message Queue, 消息队列（MQ）是一种应用程序对应用程序的通信方法。应用程序通过读写出入队列的消息（针对应用程序的数据）来通信，而无需专用连接来链接它们。消息传递指的是程序之间通过在消息中发送数据进行通信，而不是通过直接调用彼此来通信，直接调用通常是用于诸如远程过程调用的技术。排队指的是应用程序通过 队列来通信。队列的使用除去了接收和发送应用程序同时执行的要求。其中较为成熟的MQ产品有IBM WEBSPHERE MQ等等…</p>
-      
-        <div class="readmore">
-          <a href="/2019/09/05/Shiro/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/Shiro/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Shiro</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2019/08/01/Shiro2/">
-      Shiro1
+    <a href="/2019/08/01/RabbitMQ2/">
+      详细了解rabbitMQ
     </a>
   </h2>
 
@@ -478,9 +374,9 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Shiro/2-详细了解RabbitMQ/' rel="nofollow">
+    <a href='/categories/RabbitMQ/2-详细了解RabbitMQ/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Shiro&nbsp;/&nbsp;2.详细了解RabbitMQ</p>
+      <p>RabbitMQ&nbsp;/&nbsp;2.详细了解RabbitMQ</p>
     </a>
   </div>
 
@@ -508,21 +404,123 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       <h4 id="一、RabbitMQ"><a href="#一、RabbitMQ" class="headerlink" title="一、RabbitMQ"></a>一、RabbitMQ</h4><p> &emsp;  &emsp; rabbitmq是一个开源的消息代理和队列服务器，用来通过普通协议在完全不同的应用之间共享数据，比如我们可以把一个用java开发的应用和一个其他语言的应用之间交互信息</p>
-<h4 id="二、哪些公司在用，为什么？"><a href="#二、哪些公司在用，为什么？" class="headerlink" title="二、哪些公司在用，为什么？"></a>二、哪些公司在用，为什么？</h4><p>&emsp; 滴滴、美团、头条等等都在使用。</p>
-<ol>
-<li>开源、性能优秀、稳定性保障，提可靠的消息投递模式、返回模式</li>
-<li>与SpringAMQP完美整合，API丰富</li>
-<li>集群模式丰富，表达式配置，HA模式，镜像队列模式</li>
-<li>保证数据不丢失做到高可靠性、可用性</li>
-</ol>
-<h4 id="三、RabbitMQ高性能的原因"><a href="#三、RabbitMQ高性能的原因" class="headerlink" title="三、RabbitMQ高性能的原因"></a>三、RabbitMQ高性能的原因</h4><p> &emsp; 因为是Erlang语言编写的，Erlang是一种函数式语言，使用Erlang编写出的应用运行时通常由成千上万个轻量级进程组成，并通过消息传递相互通讯。使用 Erlang来编写分布式应用比其它语言简单许多，因为它的分布式机制是透明的，即对于程序而言并不知道自己是在分布式运行。Erlang运行环境是一个 虚拟机，有点类似于Java虚拟机，代码一经编译，同样可以随处运行。它的运行时系统甚至允许代码在不被中断的情况下更新。另外如果需要更高效的话，字节 代码也可以编译成本地代码运行。<br> &emsp; 目的是创造一种可以应对大规模并发活动的编程语言和运行环境<br>Erlang语言最初在于交换机领域的架构模式，这样使得RabbitMQ在Broker之间进行数据交互的性能非常优秀</p>
-
+      
+        <div class="readmore">
+          <a href="/2019/08/01/RabbitMQ2/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
     </div>
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/Shiro/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Shiro</a>
+          <a href="/tags/RabbitMQ/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>RabbitMQ</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/08/01/RabbitMQ1/">
+      rabbitMQ相关概念
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="https://Createdestruction.github.io" rel="nofollow">
+      
+        <i class="fas fa-user" aria-hidden="true"></i>
+      
+      <p>Createdestruction</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-08-01</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/RabbitMQ/1-RabbitMQ相关概念/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>RabbitMQ&nbsp;/&nbsp;1.RabbitMQ相关概念</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h4 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h4><p>MQ全称为Message Queue, 消息队列（MQ）是一种应用程序对应用程序的通信方法。应用程序通过读写出入队列的消息（针对应用程序的数据）来通信，而无需专用连接来链接它们。消息传递指的是程序之间通过在消息中发送数据进行通信，而不是通过直接调用彼此来通信，直接调用通常是用于诸如远程过程调用的技术。排队指的是应用程序通过 队列来通信。队列的使用除去了接收和发送应用程序同时执行的要求。其中较为成熟的MQ产品有IBM WEBSPHERE MQ等等…</p>
+      
+        <div class="readmore">
+          <a href="/2019/08/01/RabbitMQ1/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/RabbitMQ/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>RabbitMQ</a>
         
       </div>
     
@@ -1082,11 +1080,15 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
     <div class='content material'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/Shiro/" href="/categories/Shiro/"><div class='name'>Shiro</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box" title="/categories/RabbitMQ/" href="/categories/RabbitMQ/"><div class='name'>RabbitMQ</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/Shiro/2-详细了解RabbitMQ/" href="/categories/Shiro/2-详细了解RabbitMQ/"><div class='name'>2.详细了解RabbitMQ</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box child" title="/categories/RabbitMQ/1-RabbitMQ相关概念/" href="/categories/RabbitMQ/1-RabbitMQ相关概念/"><div class='name'>1.RabbitMQ相关概念</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/Shiro/Shiro相关概念/" href="/categories/Shiro/Shiro相关概念/"><div class='name'>Shiro相关概念</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box child" title="/categories/RabbitMQ/2-详细了解RabbitMQ/" href="/categories/RabbitMQ/2-详细了解RabbitMQ/"><div class='name'>2.详细了解RabbitMQ</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Shiro/" href="/categories/Shiro/"><div class='name'>Shiro</div><div class='badge'>(0)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Shiro/1-RabbitMQ相关概念/" href="/categories/Shiro/1-RabbitMQ相关概念/"><div class='name'>1.RabbitMQ相关概念</div><div class='badge'>(0)</div></a></li>
         
           <li><a class="flat-box" title="/categories/电影评论/" href="/categories/电影评论/"><div class='name'>电影评论</div><div class='badge'>(2)</div></a></li>
         
@@ -1128,7 +1130,7 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
     <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
       <div class="widget-wrap">
              <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                <a href="/tags/Shiro/" style="font-size: 24px; color: #555">Shiro</a> <a href="/tags/hellow-world/" style="font-size: 14px; color: #999">hellow-world</a> <a href="/tags/testing/" style="font-size: 14px; color: #999">testing</a> <a href="/tags/world/" style="font-size: 14px; color: #999">world</a>
+                <a href="/tags/RabbitMQ/" style="font-size: 24px; color: #555">RabbitMQ</a> <a href="/tags/hellow-world/" style="font-size: 14px; color: #999">hellow-world</a> <a href="/tags/testing/" style="font-size: 14px; color: #999">testing</a> <a href="/tags/world/" style="font-size: 14px; color: #999">world</a>
             </canvas>
         <div id="myCanvasContainer" class="widget tagcloud">
         </div>
@@ -1157,7 +1159,7 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
 </header>
 
     <div class='content material'>
-      <a href="/tags/Shiro/" style="font-size: 24px; color: #555">Shiro</a> <a href="/tags/hellow-world/" style="font-size: 14px; color: #999">hellow-world</a> <a href="/tags/testing/" style="font-size: 14px; color: #999">testing</a> <a href="/tags/world/" style="font-size: 14px; color: #999">world</a>
+      <a href="/tags/RabbitMQ/" style="font-size: 24px; color: #555">RabbitMQ</a> <a href="/tags/hellow-world/" style="font-size: 14px; color: #999">hellow-world</a> <a href="/tags/testing/" style="font-size: 14px; color: #999">testing</a> <a href="/tags/world/" style="font-size: 14px; color: #999">world</a>
     </div>
   </section>
 
