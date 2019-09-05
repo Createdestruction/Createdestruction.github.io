@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[AMQP核心概念]]></title>
+    <url>%2F2019%2F08%2F02%2FRabbitMQ3%2F</url>
+    <content type="text"><![CDATA[AMQP核心概念&emsp;&emsp;AMQP全程是：Advanced Message Queuing Protocol(高级消息队列协议)AMQP定义：是具有现代特征的二进制协议。是一个提供统一消息服务的应用层标准高级消息队列协议，是应用层协议的一个开放标准，为面向消息的中间件设计。 各个名词的概念Server：又称Broker，接收客户端的连接，实现AMQP的实体服务Connection：连接，应用程序与Broker的网络连接Channel：网络通道，几乎所有的操作都在Channel中进行，Channel是进行消息读写的通道，客户端可以建立多个Channel，每个Channel代表一个会话任务Message：消息，服务器和应用程序之间传送的数据，由Properties和Body组成，Properties可以对消息进行修饰，比如消息的优先级、延迟等高级特性，Body就是消息的真实内容Virtual host：虚拟地址，用于进行逻辑隔离，最上层的消息路由。一个Virtual Host里面可以有若干个Exchange和Queue，同一个Virtual Host里面不能有相同名称的Exchange或QueueExchange：交换机，接收消息，根据路由键转发消息到绑定的QueueBinding：Exchange和Queue之间的虚拟连接，binding中可以包含routing keyRouting key：一个路由规则，虚拟机可以用它来确定如何路由一个特定的消息Queue：Message Queue，消息队列，保存消息并将它们转发给消费者]]></content>
+      <categories>
+        <category>RabbitMQ</category>
+        <category>3.AMQP核心概念</category>
+      </categories>
+      <tags>
+        <tag>RabbitMQ</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[详细了解rabbitMQ]]></title>
     <url>%2F2019%2F08%2F01%2FRabbitMQ2%2F</url>
     <content type="text"><![CDATA[一、RabbitMQ &emsp; &emsp; rabbitmq是一个开源的消息代理和队列服务器，用来通过普通协议在完全不同的应用之间共享数据，比如我们可以把一个用java开发的应用和一个其他语言的应用之间交互信息 二、哪些公司在用，为什么？&emsp; 滴滴、美团、头条等等都在使用。 开源、性能优秀、稳定性保障，提可靠的消息投递模式、返回模式 与SpringAMQP完美整合，API丰富 集群模式丰富，表达式配置，HA模式，镜像队列模式 保证数据不丢失做到高可靠性、可用性 三、RabbitMQ高性能的原因 &emsp; 因为是Erlang语言编写的，Erlang是一种函数式语言，使用Erlang编写出的应用运行时通常由成千上万个轻量级进程组成，并通过消息传递相互通讯。使用 Erlang来编写分布式应用比其它语言简单许多，因为它的分布式机制是透明的，即对于程序而言并不知道自己是在分布式运行。Erlang运行环境是一个 虚拟机，有点类似于Java虚拟机，代码一经编译，同样可以随处运行。它的运行时系统甚至允许代码在不被中断的情况下更新。另外如果需要更高效的话，字节 代码也可以编译成本地代码运行。 &emsp; 目的是创造一种可以应对大规模并发活动的编程语言和运行环境Erlang语言最初在于交换机领域的架构模式，这样使得RabbitMQ在Broker之间进行数据交互的性能非常优秀]]></content>
