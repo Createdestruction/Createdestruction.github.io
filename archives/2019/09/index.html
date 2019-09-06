@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>RabbitMQ  R3 | 孤独与诗</title>
+  <title>Archives: 2019/9 | 孤独与诗</title>
   
   
 
@@ -46,7 +46,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover post half'>
+    <cover class='cover  half'>
       
         
   <img class='logo' src='/images/author.png'/>
@@ -302,11 +302,26 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
     <div class='body-wrapper'     id="pjax-container">
       <!--id="pjax-container"是为了PJAX添加的-->
       <div class='l_main'>
-  
-
-  
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+	
+		
+  <section class="post-list">
+    
       
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
 
 
   <section class='meta'>
@@ -315,13 +330,11 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
     <div class="meta" id="header-meta">
       
         
-  
-    <h1 class="title">
-      <a href="/2019/08/02/RabbitMQ3/">
-        RabbitMQ  R3
-      </a>
-    </h1>
-  
+  <h2 class="title">
+    <a href="/2019/09/06/RabbitMQ8/">
+      RabbitMQ8
+    </a>
+  </h2>
 
 
       
@@ -347,7 +360,7 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-02</p>
+    <p>2019-09-06</p>
   </a>
 </div>
 
@@ -368,19 +381,6 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
         
           
             
-  
-    <div class="new-meta-item browse busuanzi">
-      <a class='notlink'>
-        <i class="fas fa-eye" aria-hidden="true"></i>
-        <p>
-          <span id="busuanzi_value_page_pv">
-            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
-          </span>
-        </p>
-      </a>
-    </div>
-  
-
 
           
         
@@ -397,182 +397,243 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
   </section>
 
 
-      <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-          <h2 id="3-AMQP核心概念"><a href="#3-AMQP核心概念" class="headerlink" title="3. AMQP核心概念"></a>3. AMQP核心概念</h2><a id="more"></a>
-
-
-
-<h4 id="AMQP核心概念"><a href="#AMQP核心概念" class="headerlink" title="AMQP核心概念"></a>AMQP核心概念</h4><p>&emsp;&emsp;AMQP全程是：Advanced Message Queuing Protocol(高级消息队列协议)<br>AMQP定义：是具有现代特征的二进制协议。是一个提供统一消息服务的应用层标准高级消息队列协议，是应用层协议的一个开放标准，为面向消息的中间件设计。</p>
-<h4 id="各个名词的概念"><a href="#各个名词的概念" class="headerlink" title="各个名词的概念"></a>各个名词的概念</h4><p><strong>Server</strong>：又称Broker，接收客户端的连接，实现AMQP的实体服务<br><strong>Connection</strong>：连接，应用程序与Broker的网络连接<br><strong>Channel</strong>：网络通道，几乎所有的操作都在Channel中进行，Channel是进行消息读写的通道，客户端可以建立多个Channel，每个Channel代表一个会话任务<br><strong>Message</strong>：消息，服务器和应用程序之间传送的数据，由Properties和Body组成，Properties可以对消息进行修饰，比如消息的优先级、延迟等高级特性，Body就是消息的真实内容<br><strong>Virtual host</strong>：虚拟地址，用于进行逻辑隔离，最上层的消息路由。一个Virtual Host里面可以有若干个Exchange和Queue，同一个Virtual Host里面不能有相同名称的Exchange或Queue<br><strong>Exchange</strong>：交换机，接收消息，根据路由键转发消息到绑定的Queue<br><strong>Binding</strong>：Exchange和Queue之间的虚拟连接，binding中可以包含routing key<br><strong>Routing key</strong>：一个路由规则，虚拟机可以用它来确定如何路由一个特定的消息<br><strong>Queue</strong>：Message Queue，消息队列，保存消息并将它们转发给消费者</p>
-
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h2 id="8-概念回顾"><a href="#8-概念回顾" class="headerlink" title="8.概念回顾"></a>8.概念回顾</h2>
+      
+        <div class="readmore">
+          <a href="/2019/09/06/RabbitMQ8/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
         </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
         
-          
+          <a href="/tags/RabbitMQ/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>RabbitMQ</a>
+        
+      </div>
+    
+  </section>
+</article>
 
-
-  <section class='meta' id="footer-meta">
-    <hr>
-    <div class='new-meta-box'>
+          </div>
+        
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-05T23:27:47+08:00">
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/09/06/RabbitMQ7/">
+      RabbitMQ7
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="https://Createdestruction.github.io" rel="nofollow">
+      
+        <i class="fas fa-user" aria-hidden="true"></i>
+      
+      <p>Createdestruction</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年9月5日</p>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-09-06</p>
   </a>
 </div>
 
-        
-      
-        
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/RabbitMQ/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>RabbitMQ</p></a></div>
-
-
-        
-      
         
           
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
-          
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://Createdestruction.github.io/2019/08/02/RabbitMQ3/&title=RabbitMQ  R3 | 孤独与诗&summary=3. AMQP核心概念"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
-          
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://Createdestruction.github.io/2019/08/02/RabbitMQ3/&title=RabbitMQ  R3 | 孤独与诗&summary=3. AMQP核心概念"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
-          
-          href="http://service.weibo.com/share/share.php?url=https://Createdestruction.github.io/2019/08/02/RabbitMQ3/&title=RabbitMQ  R3 | 孤独与诗&summary=3. AMQP核心概念"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
-          
-        </a>
-      
-    
-  </div>
-</div>
+            
 
-
-
+          
         
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
       
     </div>
   </section>
 
 
-        
-        
-            <div class="prev-next">
-                
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/2019/08/05/RabbitMQ4/" rel="prev" title="RabbitMQ  R4">
-                                  
-                                      RabbitMQ  R4
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/RabbitMQ/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>RabbitMQ</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-                
-                    <section class="next">
-                        <span class="art-item-right" aria-hidden="true">
-                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                            <h4>
-                                <a href="/2019/08/01/RabbitMQ2/" rel="prev" title="RabbitMQ  R2">
-                                    
-                                        RabbitMQ  R2
-                                    
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/RabbitMQ/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>RabbitMQ</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-            </div>
-        
-      </section>
-    </article>
-  
-
-  
-    <!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box comments">
-    <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h2 id="7-Exchange交换机"><a href="#7-Exchange交换机" class="headerlink" title="7.Exchange交换机"></a>7.Exchange交换机</h2>
       
+        <div class="readmore">
+          <a href="/2019/09/06/RabbitMQ7/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
       
-        <section id="comments">
-          <div id="lv-container" data-id="city" data-uid="MTAyMC80NTM1Ni8yMTg2OQ==">
-            <noscript><div><i class='fas fa-exclamation-triangle'>&nbsp;无法加载Livere评论系统，请确保您的网络能够正常访问。</div></noscript>
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/RabbitMQ/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>RabbitMQ</a>
+        
+      </div>
+    
+  </section>
+</article>
+
           </div>
-        </section>
+        
       
-      
-      
-    </section>
-  </article>
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
 
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/09/06/RabbitMQ6/">
+      RabbitMQ R6
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="https://Createdestruction.github.io" rel="nofollow">
+      
+        <i class="fas fa-user" aria-hidden="true"></i>
+      
+      <p>Createdestruction</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-09-06</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/RabbitMQ/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>RabbitMQ</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h2 id="6生产者"><a href="#6生产者" class="headerlink" title="6生产者"></a>6生产者</h2>
+      
+        <div class="readmore">
+          <a href="/2019/09/06/RabbitMQ6/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/RabbitMQ/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>RabbitMQ</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
 
   
 
 
-
-
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-
-  <script>
-    window.subData = {
-      title: 'RabbitMQ  R3',
-      tools: true
-    }
-  </script>
-
-
+	
 </div>
 <aside class='l_side'>
   
@@ -684,20 +745,6 @@ color="200,100,200" opacity='1' zIndex="-2" count="90" src="//cdn.bootcss.com/ca
           
           
             
-  <section class='widget toc-wrapper'>
-    
-<header class='material'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
-  
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
-  
-</header>
-
-    <div class='content material'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-AMQP核心概念"><span class="toc-text">3. AMQP核心概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AMQP核心概念"><span class="toc-text">AMQP核心概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#各个名词的概念"><span class="toc-text">各个名词的概念</span></a></li></ol></li></ol></li></ol>
-    </div>
-  </section>
-
 
           
         
@@ -1025,6 +1072,14 @@ setInterval("createtime()",250);
 <script>setLoadingBarProgress(80);</script>
 
 
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
+
+
       <script>setLoadingBarProgress(60);</script>
     </div>
 
@@ -1114,17 +1169,6 @@ setInterval("createtime()",250);
 
 
 
-
-  <script type="text/javascript">
-    (function(d, s) {
-      var j, e = d.getElementsByTagName(s)[0];
-      if (typeof LivereTower === 'function') { return; }
-      j = d.createElement(s);
-      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      j.async = true;
-      e.parentNode.insertBefore(j, e);
-    })(document, 'script');
-  </script>
 
 
 
